@@ -98,6 +98,8 @@ def main():
         # Initialize the varaibles
         rank = title = revenue = ceo = position = industry = hq = website = years = employees = img_name = 'NA'
 
+        img_file = img_path = img_url = None
+
         try:
             rank = company.find('span', {'class': 'company-rank'}).text
             title = company.find('span', {'class': 'company-title'}).text
